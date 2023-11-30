@@ -1,11 +1,9 @@
 <template>
-  <CounterComposition />
+  <ExampleSelective />
 </template>
 
 <script lang="ts" setup>
-import CounterComposition from './components/CounterComposition.vue';
-// import CounterOption from './components/CounterOption.vue';
-// import PostContainer from './components/PostContainer.vue';
+import ExampleSelective from './components/ExampleSelective.vue'
 </script>
 
 <style>
