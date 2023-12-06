@@ -1,9 +1,9 @@
 <template>
-  <ExampleSelective />
+  <ClassBind />
 </template>
 
 <script lang="ts" setup>
-import ExampleSelective from './components/ExampleSelective.vue'
+import ClassBind from './components/ClassBind.vue';
 </script>
 
 <style>
