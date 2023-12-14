@@ -1,13 +1,9 @@
 <template>
-  <ModelForm />
+  <PostList />
 </template>
 
 <script lang="ts" setup>
-import ModelForm from './components/ModelForm.vue';
+import PostList from './components/PostList.vue';
 </script>
 
-<style>
-h1 {
-  color: green;
-}
-</style>
+<style></style>
