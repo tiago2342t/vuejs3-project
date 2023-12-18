@@ -1,9 +1,9 @@
 <template>
-  <PostList />
+  <ComputedExample />
 </template>
 
 <script lang="ts" setup>
-import PostList from './components/PostList.vue';
+import ComputedExample from './components/ComputedExample.vue';
 </script>
 
 <style></style>
