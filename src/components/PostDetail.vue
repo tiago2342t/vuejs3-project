@@ -7,36 +7,28 @@
     </div>
 </template>
 
-<script lang="ts">
-import { Ref, ref, defineComponent } from "vue";
+<script setup lang="ts">
+import { defineProps, defineEmits, Ref, ref } from "vue";
 
-export default defineComponent({
-    name: 'PostDetail',
-    props: {
-        title: {
-            type: String,
-            required: true,
-        },
-        content: {
-            type: String,
-            required: false,
-            default: "Sin contenido"
-        },
+const props = defineProps({
+    title: {
+        type: String,
+        required: true,
     },
-    emits: ["sayHi"],
-    setup(props, { emit }) {
-        const handleClick = () => {
-            emit("sayHi", message.value)
-        };
-        let message: Ref<string> = ref("");
-
-        return {
-            props,
-            message,
-            handleClick
-        }
-    }
+    content: {
+        type: String,
+        required: false,
+        default: "Sin contenido"
+    },
 });
+
+const emit = defineEmits(["sayHi"]);
+
+const handleClick = () => {
+    emit("sayHi", message.value)
+};
+
+let message: Ref<string> = ref("");
 </script>
 
 <style scoped>
